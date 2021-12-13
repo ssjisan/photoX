@@ -1,0 +1,82 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+.header{
+  background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url(images/header-img.jpeg) no-repeat center center /cover;
+  height:100vh;
+}
+
+/* Navbar */
+.nav-menu{
+  padding:30px
+}
+.menu-item{
+  letter-spacing: 1;
+  color:#eee;
+}
+/* Navbar End */
+/* Bannar */
+.bannar{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:80%;
+}
+.bannar-header{
+  animation-name: animation;
+  animation-duration:2s; 
+}
+.bannar-para{
+  animation-name: animation;
+  animation-duration:2s; 
+  animation-delay: .5s; 
+  animation-fill-mode: backwards;
+}
+
+@keyframes animation {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity:1
+  }
+}
+/* Bannar End */
+/* Header End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
