@@ -1,82 +1,92 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Header */
-.header{
-  background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)),url(images/header-img.jpeg) no-repeat center center /cover;
-  height:100vh;
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(images/header-img.jpeg) no-repeat center center / cover;
+  height: 100vh;
 }
 
 /* Navbar */
-.nav-menu{
-  padding:30px
+.nav-menu {
+  padding: 30px;
+  transition: .7s;
 }
-.menu-item{
+.menu-item {
   letter-spacing: 1;
-  color:#eee;
+  color: #eee;
+}
+.custom-nav {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
 }
 /* Navbar End */
 /* Bannar */
-.bannar{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  width:80%;
+.bannar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
-.bannar-header{
+.bannar-header {
   animation-name: animation;
-  animation-duration:2s; 
+  animation-duration: 2s;
 }
-.bannar-para{
+.bannar-para {
   animation-name: animation;
-  animation-duration:2s; 
-  animation-delay: .5s; 
+  animation-duration: 2s;
+  animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
 
 @keyframes animation {
-  0%{
+  0% {
     transform: translateX(-100px);
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateX(0);
-    opacity:1
+    opacity: 1;
   }
 }
 /* Bannar End */
 /* Header End */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Mission */
+.mission{
+  background: #151f20
+}
+.underline{
+  width:150px;
+  border:3px solid  white;
+  margin:auto
+}
+.img{
+  animation-name: imgAnimation;
+  animation-duration:2s;
+  animation-delay: .5s;
+}
+@keyframes imgAnimation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes textAnimation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Mission End */
